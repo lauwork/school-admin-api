@@ -179,6 +179,30 @@ All required environment variables are defined in `.env.example`.
 
 ---
 
+---
+
+## 📬 Postman Collection
+
+For easier testing, a ready-to-use **Postman collection** is included with all API endpoints.
+
+📁 **File location:**  
+[`postman/SchoolAdminAPI.postman_collection.json`](./postman/SchoolAdminAPI.postman_collection.json)
+
+### 🔹 How to use
+1. Open **Postman** → click **Import** → select the file above.  
+2. Ensure your backend server is running (`http://localhost:3000`).  
+3. Use the requests in the collection to test endpoints such as:
+   - `POST /api/upload` – Upload and process CSV file  
+   - `GET /api/class/:classCode/students` – List internal + external students  
+   - `PUT /api/class/:classCode` – Update class name  
+   - `GET /api/report` – Generate teacher/class/student report  
+   - `GET /api/healthcheck` – API health status check
+
+💡 *This collection includes all query parameters, example body payloads, and test data for quick validation.*
+
+---
+
+
 ## 🧑‍💻 Author
 
 **Lau Lau**  
