@@ -183,7 +183,7 @@ All required environment variables are defined in `.env.example`.
 
 **Lau Lau**  
 📧 laushihongwork@gmail.com  
-GitHub: [@<lauwork>](https://github.com/lauwork)
+GitHub: [@lauwork](https://github.com/lauwork)
 
 
 ---
