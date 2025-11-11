@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "fd13b847-5e14-4959-b06d-d28d4031ead5",
+		"name": "school-administration-system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32290144"
+	},
+	"item": [
+		{
+			"name": "1. upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/shi_h/Desktop/interview-package-ts/interview-package-ts/data.sample-NEW.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{localhost3000}}/upload",
+					"host": [
+						"{{localhost3000}}"
+					],
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. class/:classCode/students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost3000}}/class/P1-1/students?page=1&size=10",
+					"host": [
+						"{{localhost3000}}"
+					],
+					"path": [
+						"class",
+						"P1-1",
+						"students"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. class/:classCode",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"P1 Integrity Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{localhost3000}}/class/P1-1",
+					"host": [
+						"{{localhost3000}}"
+					],
+					"path": [
+						"class",
+						"P1-1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4. report",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost3000}}/report",
+					"host": [
+						"{{localhost3000}}"
+					],
+					"path": [
+						"report"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "teachers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost3000}}/teachers",
+					"host": [
+						"{{localhost3000}}"
+					],
+					"path": [
+						"teachers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "healthcheck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost3000}}/healthcheck/",
+					"host": [
+						"{{localhost3000}}"
+					],
+					"path": [
+						"healthcheck",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "localhost3000",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
